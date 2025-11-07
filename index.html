@@ -23,9 +23,11 @@
 <body>
     
 <header>
-
+<div class="fixed-sidebar">
 <div class="hero-section">
-  <img class="hero-image" src="" alt="profile-img" width="100%" height="auto" loading="lazy">
+ <div class="hero-image">
+   <img src="assets/profile-img.webp" alt="profile-img" width="100%" height="100%" loading="lazy">
+ </div>
 
     <h1 class="hero-title">
         Amazonia Frames
@@ -37,7 +39,7 @@
 
 <nav>
     <ul>
-    <li><a href="#portfolio"><i class="fa fa-th-large"></i> PORTFOLIO</a></li>
+    <li><a class="active" href="#portfolio"><i class="fa fa-th-large"></i> PORTFOLIO</a></li>
     <li><a href="#about"><i class="fa fa-user"></i> ABOUT</a></li>
     <li><a href="#contact"><i class="fa fa-envelope"></i> CONTACT</a></li>
     </ul>
@@ -51,6 +53,7 @@
     <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
     <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
 </div>
+</div>
 </header>
 
 <main>
@@ -60,9 +63,9 @@
         </h2>
 
         <div class="navigation-links border-bottom">
-            <a href="">Filter:</a>
-            <a href="">ALL</a>
-            <a href=""><i class="fa fa-diamond">Design</i></a>
+            <a class="filter" href="">Filter:</a>
+            <a class="dark" href="">ALL</a>
+            <a href="#"><i class="fa fa-diamond"></i> Design</a>
             <a href="#"><i class="fa fa-image"></i> Photos</a>
             <a href="#"><i class="fa fa-map-pin"></i> Art</a>
         </div>
@@ -115,14 +118,14 @@
             <img src="images/image-06.jpg" alt="image-06" width="100%" height="100%" loading="lazy">
         </div>
         <h3>Twilight Over Amazonia</h3>
-        <p>As dusk falls, the forest glows in whispers of gold and shadow — nature’s final symphony of the day.</p>
+        <p>As dusk falls, the forest glows in whispers of gold and shadow</p>
     </div>
 
 </div>
 
 <div class="pagination">
     <a href="">«</a>
-    <a href="">1</a>
+    <a class="dark" href="">1</a>
     <a href="">2</a>
     <a href="">3</a>
     <a href="">4</a>
@@ -152,7 +155,7 @@
     Web Development <span class="light-color">(as a Front-end Developer)</span>
 </h4>
 <div class="progress-bar">
-    <div class="progress">
+    <div class="progress-development">
   95%
     </div>
 </div>
@@ -160,22 +163,20 @@
 <h4>
     Web Design
 </h4>
-<div class="progress-bar">
-    <div class="progress">
-85%
-    </div>
+<div class="progress-bar"> 
+    <div class="progress-design">85%</div>
 </div>
 
 <h4>
     Photography
 </h4>
 <div class="progress-bar">
-    <div class="progress">
+    <div class="progress-photography">
   75%
     </div>
 </div>
 
-<button>
+<button class="btn-download">
   <i class="fa fa-download"></i> Download Resume
 </button>
 </div>
@@ -186,9 +187,9 @@
         How Much I Charge
     </h2>
 
-    <div class="flex-container-2">
+    <div class="flex-container-1">
         <div class="flex-item-1">
-            <h3>
+            <h3 class="basic">
               Basic
             </h3>
 
@@ -206,12 +207,12 @@
                 per month
             </p>
             <div class="btn-section">
-                <button>Sign Up</button>
+                 <button id="openModalBtn">Sign Up</button>
             </div>
         </div>
 
          <div class="flex-item-1">
-            <h3>
+            <h3 class="pro">
               Pro
             </h3>
 
@@ -229,12 +230,12 @@
                 per month
             </p>
             <div class="btn-section">
-                <button>Sign Up</button>
+                 <button id="openModalBtn">Sign Up</button>
             </div>
         </div>
 
          <div class="flex-item-1">
-            <h3>
+            <h3 class="premium">
               Premium
             </h3>
 
@@ -252,12 +253,58 @@
                 per month
             </p>
             <div class="btn-section">
-                <button>Sign Up</button>
+                 <button id="openModalBtn">Sign Up</button>
             </div>
         </div>
     </div>
 
 </div>
+
+<!-- Payment Modal -->
+<div id="paymentModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="paymentTitle" aria-hidden="true">
+  <div class="modal-panel" role="document">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <h2 id="paymentTitle">Secure Payment</h2>
+    <p class="muted">Enter your card and bank details. This form performs client-side validation only. Use a PCI-compliant gateway in production.</p>
+
+    <form id="paymentForm" novalidate>
+      <label for="cardName">Cardholder Name</label>
+      <input id="cardName" name="cardName" type="text" autocomplete="cc-name" required placeholder="Full name as on card">
+
+      <label for="cardNumber">Card Number</label>
+      <input id="cardNumber" name="cardNumber" inputmode="numeric" type="text" autocomplete="cc-number" required maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+
+      <div class="row">
+        <div class="col">
+          <label for="expiry">Expiry (MM/YY)</label>
+          <input id="expiry" name="expiry" type="text" inputmode="numeric" maxlength="5" placeholder="MM/YY" required>
+        </div>
+        <div class="col">
+          <label for="cvv">CVV</label>
+          <input id="cvv" name="cvv" type="password" inputmode="numeric" maxlength="4" placeholder="123" autocomplete="cc-csc" required>
+        </div>
+      </div>
+
+      <hr>
+
+      <label for="bankName">Bank Name</label>
+      <input id="bankName" name="bankName" type="text" placeholder="e.g. Banco do Brasil" required>
+
+      <label for="iban">IBAN</label>
+      <input id="iban" name="iban" type="text" inputmode="text" autocomplete="off" placeholder="GB29 NWBK 6016 1331 9268 19" required>
+
+      <div class="form-row">
+        <div id="formErrors" class="form-errors" aria-live="polite"></div>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="primary">Submit Payment</button>
+        <button type="button" class="secondary" id="cancelBtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
 </section>
 
 <section id="contact">
@@ -293,17 +340,91 @@
   <textarea id="message" name="message" rows="6" placeholder="Write your message here…" required maxlength="2000"></textarea>
 
   <button type="submit">Send Message</button>
+  <p>Message sent successfully.</p>
 </form>
-
-
 </section>
-
-
-
-
 </main>
 
+<footer class="footer-bg-gray">
 
+<div class="flex-container-4">
+<div class="flex-item-01">
+    <h3>
+        FOOTER
+    </h3>
+    <p>
+       <strong>Amazonia Frames —</strong> capturing the untamed beauty of the rainforest, where light, 
+       color, and life blend into timeless moments. Every frame tells a story of nature’s rhythm and raw
+        emotion.
+    </p>
+    <p>
+        © 2025 <a href="">Amazonia Frames</a> | Powered by <a href="">Khan-code-88</a>
+    </p>
+</div>
+
+<div class="flex-item-02">
+    <h3>
+        Blog Posts
+    </h3>
+
+    <div class="flex-container-5">
+        <div class="flex-1">
+            <img src="" alt="blog-post-image-1" loading="lazy" width="100%" height="auto">
+        </div>
+        <div class="flex-2">
+        <h4>
+            Whispers of the Rainforest
+        </h4>
+        <p>
+            Discover the hidden stories of the Amazon through my lens.
+        </p>
+        </div>
+    </div>
+
+    <div class="flex-container-5">
+        <div class="flex-1">
+            <img src="" alt="blog-post-image-2" loading="lazy" width="100%" height="auto">
+        </div>
+        <div class="flex-2">
+        <h4>
+            Echoes in Green
+        </h4>
+        <p>
+            A photo journey exploring the textures and tones of untouched nature.
+        </p>
+        </div>
+    </div>
+</div>
+
+<div class="flex-item-03">
+    <h3>
+        POPULAR TAGS
+    </h3>
+
+<div class="tag-links">
+    <a href="#">Nature</a>
+    <a href="#">Rainforest</a>
+    <a href="#">Amazon</a>
+    <a href="#">Wildlife</a>
+    <a href="#">Landscape</a>
+    <a href="#">Photography</a>
+    <a href="#">Adventure</a>
+    <a href="#">GreenEarth</a>
+    <a href="#">Inspiration</a>
+    <a href="#">Travel</a>
+    <a href="#">Light</a>
+    <a href="#">Forest</a>
+</div>
+</div>
+</div>
+
+<div class="footer">
+    <p>
+        powerd by <a href="">Muhammad Ishaq Khan - <span class="dark-color">khan-code-88</span></a>
+    </p>
+</div>
+
+</footer>
     <script src="script.js"></script>
 </body>
 </html>

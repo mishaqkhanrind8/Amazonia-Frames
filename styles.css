@@ -22,6 +22,400 @@ h1, h2, h3 {
      font-weight: 600;
     }
 
-h1 { font-size: 1.2em; }
-h2 { font-size: 1.8em; }
-h3 { font-size: 1.4em; }
+header {
+    position: relative;
+}
+
+.fixed-sidebar {
+    position: fixed;
+    background-color: #fff;
+    color: #333;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+}
+
+main {
+    background-color: #f1f1f1;
+    margin-left: 300px;
+    padding: 1rem;
+}
+
+footer {
+    margin-left: 300px;
+    padding: 2rem 1.5rem;
+}
+
+.hero-section {
+    padding: 1.3rem;
+}
+
+div.hero-image {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+div.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-title {
+    margin: 1.5rem 0 0.5rem;
+    font-size: 1.3rem;
+}
+
+.hero-subtitle {
+  margin: 0;
+  font-size: 15px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li a {
+    display: block;
+    color: #333;
+    padding: 7px 1.4rem;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: #009688;
+}
+nav ul li a.active:hover {
+    background-color: lightgray;
+    color: #333;
+}
+
+nav ul li a i {
+    padding: 0 1rem 0 0;
+}
+
+nav ul li a:hover {
+    background-color: lightgray;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    color: #333;
+    transition: all 0.4s ease;
+}
+
+.social-icons a:hover {
+    color: #000;
+    transform: scale(1.3);
+}
+
+div.portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.navigation-links {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.9rem;
+}
+
+.navigation-links a:not(.filter) {
+    display: block;
+    padding: 8px 16px;
+    background-color: #fff;
+    margin: 1.3px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.4s ease;
+}
+
+.navigation-links a:hover:not(.filter) {
+    background-color: lightgray;
+    color: #333;
+}
+
+.navigation-links a i {
+    padding: 0 10px 0 0;
+}
+
+.navigation-links a.filter {
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: all 0.4s ease;
+}
+
+.navigation-links a.dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.border-bottom {
+    border-bottom: 5px solid lightgray ;
+}
+
+div.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem 10px;
+    margin-top: 1rem;
+}
+
+.item-1, .item-2, .item-3, .item-4, .item-5, .item-6 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) ;
+}
+
+.image-section {
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) ;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-section img:hover {
+    opacity: 0.8;
+}
+
+.item-1 h3, .item-2 h3, .item-3 h3, .item-4 h3, .item-5 h3, .item-6 h3 {
+    font-size: 1.1rem;
+    padding: 0.5rem 10px 0;
+    min-height: 64px;
+}
+
+.item-1 p, .item-2 p, .item-3 p, .item-4 p, .item-5 p, .item-6 p {
+    font-size: 0.9rem;
+    padding: 0.5rem 10px 1rem;
+}
+
+div.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0;
+}
+
+div.pagination a {
+    display: block;
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+div.pagination a.dark {
+    background-color: #000;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+div.pagination a:hover {
+    background-color: lightgray;
+    color: #333;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.flex-container img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+#about h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.technical-skills {
+    margin: 2rem 0;
+
+}
+
+.technical-skills h3 {
+    font-size: 1.2rem;
+}
+
+.technical-skills h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+.progress-bar {
+    text-align: center;
+    background-color: #9e9e9e;
+    line-height: 2.3;
+
+}
+
+.progress-development {
+    background-color: #616161;
+    color: #fff;
+    width: 95%;
+}
+
+.progress-design {
+    background-color: #616161;
+    color: #fff;
+    width: 85%;
+}
+
+.progress-photography {
+    background-color: #616161;
+    color: #fff;
+    width: 75%;
+}
+
+.btn-download {
+    background-color: #616161;
+    color: #fff;
+    padding: 12px 16px;
+    margin-top: 1.8rem;
+    border: none;
+}
+
+.btn-download i {
+    padding: 0 1rem 0 0;
+}
+
+.btn-download:hover {
+    background-color: lightgray;
+    color: #333;
+}
+
+div.package-section h2 {
+ font-size: 1.2rem;
+ font-weight: 500;
+}
+
+div.flex-container-1 {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+div.flex-item-1 {
+    flex: 1;
+    text-align: center;
+    border: 1px solid #3333331a;
+    opacity: 0.6;
+    background-color: #fff;
+}
+
+div.flex-item-1:hover {
+    opacity: 1;
+}
+
+.flex-item-1 .basic {
+    background-color: #000;
+    color: #fff;
+    padding: 2.3rem 0;
+}
+
+.flex-item-1 .pro {
+    background-color: #009688;
+    color: #fff;
+    padding: 2.3rem 0;
+}
+
+.flex-item-1 .premium {
+    background-color: #000;
+    color: #fff;
+    padding: 2.3rem 0;
+}
+
+.flex-item-1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item-1 ul li {
+  padding: 12px 16px;
+  border-bottom: 1px solid #3333331a;
+}
+
+.flex-item-1 h4 {
+    margin: 1.5rem 0 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+span.big-symbol {
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+
+.flex-item-1 p {
+    font-size: 15px;
+    color: #333;
+}
+
+.btn-section {
+    background-color: #f1f1f1;
+    color: #333;
+    border-right: 1px solid #00000033;
+    border-left: 1px solid #00000033;
+    border-bottom: 1px solid #00000033;
+    padding: 1rem 0;
+}
+
+.btn-section button {
+    background-color: #009688;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1em;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-section button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+div.modal {
+    position: relative;
+    display: none;
+}
+
+.modal-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+}
