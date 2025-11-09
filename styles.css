@@ -711,4 +711,9 @@ div.flex-item-1 {
     padding: 1.5rem;
 }
 
+.navigation-links a {
+  font-size: 13px;
+  padding: 6px 10px;
+}
+
 }
