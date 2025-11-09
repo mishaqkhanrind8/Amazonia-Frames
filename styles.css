@@ -726,5 +726,15 @@ div.flex-item-1 {
     margin-right: 0.3rem;
 }
 
+.contact-section {
+    margin-top: 3.5rem;
+    background-color: #9e9e9e;
+    color: #000 !important;
+    padding: 1.5rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    margin-bottom: 0;
+}
+
 
 }
