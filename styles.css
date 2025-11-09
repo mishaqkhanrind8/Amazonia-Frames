@@ -716,4 +716,13 @@ div.flex-item-1 {
   padding: 6px 10px;
 }
 
+.navigation-links a i {
+    padding: 0 5px 0 0;
+}
+
+.navigation-links a.filter {
+    margin-right: 0.5rem;
+}
+
+
 }
