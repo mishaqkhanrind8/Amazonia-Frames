@@ -717,7 +717,7 @@ div.flex-item-1 {
 }
 
 .navigation-links a i {
-    padding: 0 5px 0 0;
+    display: none;
 }
 
 .navigation-links a.filter {
