@@ -705,12 +705,12 @@ footer {
 @media (max-width: 431px) {
 
 .toggle-menu {
-    font-size: 1.4rem;
-    padding-left: 0.5rem;
+    font-size: 1.9rem;
+    padding-left: 0.7rem;
 }
 
 .circle-img {
-    margin: 3px;
+    margin: 3px 5px;
     width: 45px;
     height: 45px;
     border-radius: 50%;
