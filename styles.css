@@ -417,6 +417,10 @@ span.big-symbol {
 
 div.modal {
     position: relative;
+
+}
+
+#paymentModal {
     display: none;
 }
 
@@ -424,10 +428,112 @@ div.modal {
     position: fixed;
     top: 50%;
     left: 50%;
-     transform: translate(-50%, -50%);
-    background-color: #fff;
-    color: #333;
+    transform: translate(-50%, -50%);
+    background-color: #009688;
+    color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     padding: 1rem;
+    z-index: 1002;
+}
+
+h2#paymentTitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+#modal-close {
+    float: right;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #009688;
+    border: none;
+}
+
+p.muted {
+    font-size: 13px;
+    color: #fff;
+}
+
+#paymentForm label.w50 {
+    display: inline-block;
+    width: 50%;
+    margin-top: 0.5rem;
+}
+
+input#cardName, input#cardNumber, input#iban, input#bankName {
+    display: inline-block;
+    width: 50%;
+    padding: 6px 8px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+input#cardName:focus, input#cardNumber:focus, input#iban:focus, input#bankName:focus {
+    outline: 1px solid #000;
+}
+
+.row {
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+.col {
+    flex: 0 0 50%;
+}
+
+.col label {
+    display: inline-block;
+    width: 50%;
+    font-size: 14px;
+}
+
+.col input {
+    display: inline-block;
+    width: 80px;
+    padding: 6px 8px;
+    border: none;
+    outline: none;
+}
+
+.col input:focus {
+    outline: 1px solid #000;
+}
+
+.form-hr {
+    margin: 0.5rem 0;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0.9rem;
+}
+
+button.primary {
+    width: 50%;
+    padding: 8px 16px;
+    background-color: #8fbc8f;
+    color: #000;
+    border: none;
+}
+
+button.primary:hover {
+    background-color: rgba(143, 188, 143, 0.8);
+}
+
+button.secondary {
+    width: 50%;
+    padding: 8px 16px;
+    background-color: #ff6347;
+    border: none;
+}
+
+button.secondary:hover {
+    background-color: #ff6347e6;
 }
 
 .contact-section {
@@ -736,6 +842,33 @@ footer {
 }
 
 @media (max-width: 431px) {
+
+#paymentForm label.w50 {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+input#cardName, input#cardNumber, input#iban, input#bankName {
+    display: inline-block;
+    width: 100%;
+}
+
+.row {
+    flex-direction: column;
+}
+
+.col {
+    margin-top: 0.5rem;
+}
+
+.actions {
+    flex-direction: column;
+}
+
+button.primary, button.secondary {
+    width: 100%;
+}
 
 .toggle-menu {
     font-size: 1.9rem;

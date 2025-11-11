@@ -213,7 +213,7 @@
                 per month
             </p>
             <div class="btn-section">
-                 <button id="openModalBtn">Sign Up</button>
+                 <button id="openModal">Sign Up</button>
             </div>
         </div>
 
@@ -236,7 +236,7 @@
                 per month
             </p>
             <div class="btn-section">
-                 <button id="openModalBtn">Sign Up</button>
+                 <button id="openModal-1">Sign Up</button>
             </div>
         </div>
 
@@ -259,7 +259,7 @@
                 per month
             </p>
             <div class="btn-section">
-                 <button id="openModalBtn">Sign Up</button>
+                 <button id="openModal-2">Sign Up</button>
             </div>
         </div>
     </div>
@@ -267,23 +267,23 @@
 </div>
 
 <!-- Payment Modal -->
-<div id="paymentModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="paymentTitle" aria-hidden="true">
-  <div class="modal-panel" role="document">
-    <button class="modal-close" aria-label="Close">&times;</button>
+<div id="paymentModal" class="modal">
+  <div class="modal-panel">
+   <button id="modal-close" aria-label="Close">&times;</button>
     <h2 id="paymentTitle">Secure Payment</h2>
     <p class="muted">Enter your card and bank details. This form performs client-side validation only. Use a PCI-compliant gateway in production.</p>
 
     <form id="paymentForm" novalidate>
-      <label for="cardName">Cardholder Name</label>
-      <input id="cardName" name="cardName" type="text" autocomplete="cc-name" required placeholder="Full name as on card">
+      <label class="w50" for="cardName">Cardholder Name</label><input id="cardName"
+       name="cardName" type="text" autocomplete="cc-name" required placeholder="Full name as on card">
 
-      <label for="cardNumber">Card Number</label>
-      <input id="cardNumber" name="cardNumber" inputmode="numeric" type="text" autocomplete="cc-number" required maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+      <label class="w50" for="cardNumber">Card Number</label><input id="cardNumber" 
+      name="cardNumber" inputmode="numeric" type="text" required maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
 
       <div class="row">
         <div class="col">
-          <label for="expiry">Expiry (MM/YY)</label>
-          <input id="expiry" name="expiry" type="text" inputmode="numeric" maxlength="5" placeholder="MM/YY" required>
+          <label for="expiry">Expiry (MM/YY)</label><input id="expiry" name="expiry"
+           type="text" inputmode="numeric" maxlength="5" placeholder="MM/YY" required>
         </div>
         <div class="col">
           <label for="cvv">CVV</label>
@@ -291,20 +291,16 @@
         </div>
       </div>
 
-      <hr>
+      <hr class="form-hr">
 
-      <label for="bankName">Bank Name</label>
-      <input id="bankName" name="bankName" type="text" placeholder="e.g. Banco do Brasil" required>
+      <label class="w50" for="bankName">Bank Name</label><input class="w50" id="bankName"
+       name="bankName" type="text" placeholder="e.g. Banco do Brasil" required>
 
-      <label for="iban">IBAN</label>
-      <input id="iban" name="iban" type="text" inputmode="text" autocomplete="off" placeholder="GB29 NWBK 6016 1331 9268 19" required>
-
-      <div class="form-row">
-        <div id="formErrors" class="form-errors" aria-live="polite"></div>
-      </div>
+      <label class="w50" for="iban">IBAN</label><input class="w50" id="iban" name="iban" type="text"
+       inputmode="text" autocomplete="off" placeholder="GB29 NWBK 6016 1331 9268 19" required>
 
       <div class="actions">
-        <button type="submit" class="primary">Submit Payment</button>
+        <button type="submit" class="primary">Pay Now</button>
         <button type="button" class="secondary" id="cancelBtn">Cancel</button>
       </div>
     </form>
