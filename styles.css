@@ -56,7 +56,9 @@ footer {
 }
 
 div.hero-image {
+    margin: 0 auto;
     width: 150px;
+    border-radius: 50%;
     height: 150px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
@@ -64,6 +66,7 @@ div.hero-image {
 div.hero-image img {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
     object-fit: cover;
 }
 
