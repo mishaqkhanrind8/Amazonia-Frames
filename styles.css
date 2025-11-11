@@ -842,6 +842,20 @@ footer {
 }
 
 @media (max-width: 431px) {
+
+div.hero-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+div.hero-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
     
     .modal-panel {
         width: 90%;
