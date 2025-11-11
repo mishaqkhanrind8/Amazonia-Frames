@@ -842,6 +842,11 @@ footer {
 }
 
 @media (max-width: 431px) {
+    
+    .modal-panel {
+        width: 90%;
+        padding: 0.8rem;
+    }
 
 #paymentForm label.w50 {
     display: inline-block;
