@@ -792,7 +792,7 @@ button.contact-submit:hover {
     top: 0;
     bottom: 0;
     left: 0;
-    width: 220px;
+    width:70%;
     z-index: 1000;
     box-shadow: 5px 0 15px rgba(0,0,0,0.2);
 }
