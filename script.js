@@ -55,3 +55,22 @@ window.addEventListener("click", (e) => {
     modalPayment.style.display = "none";
   }
 });
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const note = document.querySelector(".submit-notification");
+
+  note.classList.add("show");
+  note.textContent = "Message sent successfully.";
+
+  setTimeout(() => {
+    note.classList.add("hide");
+  }, 2000);
+
+  // thoda delay se completely remove display
+  setTimeout(() => {
+    note.classList.remove("show", "hide");
+    note.style.display = "none";
+  }, 2500);
+});
