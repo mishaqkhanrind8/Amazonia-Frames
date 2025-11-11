@@ -34,6 +34,7 @@ header {
     bottom: 0;
     left: 0;
     width: 300px;
+    z-index: 1000;
 }
 
 main {
@@ -652,8 +653,21 @@ button.contact-submit:hover {
     text-decoration: underline;
 }
 
+.close-modal-section {
+    position: relative;
+}
+
+#close-modal-1 {
+  display: none;
+  font-size: 24px;
+  color: #000;
+  margin-right: 10px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
 @media (max-width: 769px) {
-    header {
+    #modal-1 {
         display: none;
     }
     main {
@@ -665,6 +679,24 @@ button.contact-submit:hover {
         margin-top: 70px;
     }
 
+.fixed-sidebar {
+    position: fixed;
+    background-color: #fff;
+    color: #333;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 220px;
+    z-index: 1000;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.2);
+}
+
+   #close-modal-1 {
+    display: block;
+    float: right;
+    margin-right: 10px;
+   }
+
     .navbar-sm-screen {
     position: fixed;
     top: 0;
@@ -673,7 +705,8 @@ button.contact-submit:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: #009688;
+    color: #fff;
     z-index: 999;
 }
 
@@ -799,7 +832,5 @@ div.flex-item-1 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
     margin-bottom: 0;
-}
-
-
+ }
 }
