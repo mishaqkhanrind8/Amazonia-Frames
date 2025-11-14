@@ -858,6 +858,9 @@ div.portfolio h2 {
     margin-bottom: 1.5rem;
 }
 
+main {
+  padding: 1.5rem;
+}
 
 div.hero-image {
     width: 80px;
