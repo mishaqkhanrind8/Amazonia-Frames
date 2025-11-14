@@ -980,12 +980,17 @@ div.flex-item-1 {
 }
 
 .navigation-links a {
-  font-size: 14px;
-  padding: 6px 10px;
+  font-size: 13px;
+  padding: 5px 8px;
 }
 
 .navigation-links a:last-child {
   display: none;
+}
+
+.navigation-links a i {
+    font-size: 14px;
+    padding: 0 3px 0 0;
 }
 
 .navigation-links a.filter {
