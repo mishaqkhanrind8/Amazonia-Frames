@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,51 +12,53 @@
      photography, nature portfolio, jungle images, travel photography, rainforest art, nature photographer">
     <meta name="author" content="Muhammad Ishaq Khan 0302-1905493">
     
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://amazonia-frames.vercel.app/">
-<meta property="og:title" content="Your Website Title">
-<meta property="og:description" content="Short and catchy description of your site.">
-<meta property="og:image" content="assets/profile-img.webp">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amazonia-frames.vercel.app/">
+    <meta property="og:title" content="Your Website Title">
+    <meta property="og:description" content="Short and catchy description of your site.">
+    <meta property="og:image" content="assets/profile-img.webp">
 
     <!-- Universal favicon setup (short version) -->
-<link rel="icon" href="assets/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512x512.png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="manifest" href="assets/site.webmanifest">
-<meta name="theme-color" content="#0a84ff">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <meta name="theme-color" content="#0a84ff">
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 
     <!-- Font Awesome 6 Short CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <script src="sw.js"></script>
-</head>
+  </head>
+
 <body>
     
-<header id="modal-1">
-<div class="fixed-sidebar">
+    <!-- Aside - As offcanvas -->
+  <header id="modal-1">
+    <div class="fixed-sidebar">
      <div class="close-modal-section"><span id="close-modal-1"><i class="fa fa-close"></i></span></div>
-<div class="hero-section">
- <div class="hero-image">
+     <div class="hero-section">
+    <div class="hero-image">
    <img src="assets/profile-img.webp" alt="profile-img" width="100%" height="100%" loading="lazy">
- </div>
+  </div>
 
     <h1 class="hero-title">
         Amazonia Frames
     </h1>
-<p class="hero-subtitle">
+  <p class="hero-subtitle">
     Echoes of the wild
-</p>
-</div>
+  </p>
+  </div>
 
-<nav>
+  <nav>
     <ul>
     <li><a class="active" href="#portfolio"><i class="fa fa-th-large"></i> PORTFOLIO</a></li>
     <li><a href="#about"><i class="fa fa-user"></i> ABOUT</a></li>
@@ -76,11 +78,14 @@
 </header>
 
 <main>
+
+    <!-- Navbar on Small Screen -->
    <div class="navbar-sm-screen">
     <div class="toggle-menu" ><span id="btn-toggler"><i class="fa fa-bars"></i></span></div>
     <div class="circle-img"><a href=""><img src="assets/profile-img.webp" alt="profile-img" width="100%" height="auto" loading="lazy"></a></div>
    </div>
 
+   <!-- Portfolio Section -->
     <div class="portfolio" id="portfolio">
         <h2>
             <span>Amazon</span>ia Frames
@@ -205,7 +210,7 @@
 </button>
 </div>
 
-
+<!-- Package Section - It's just for prictice not geniun Transictions -->
 <div class="package-section">
     <h2>
         How Much I Charge

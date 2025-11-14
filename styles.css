@@ -440,6 +440,7 @@ div.modal {
     transform: translate(-50%, -50%);
     background-color: #009688;
     color: #fff;
+    border-radius: 8px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     padding: 1rem;
     z-index: 1002;
@@ -979,12 +980,12 @@ div.flex-item-1 {
 }
 
 .navigation-links a {
-  font-size: 13px;
-  padding: 4px 8px;
+  font-size: 14px;
+  padding: 6px 10px;
 }
 
-.navigation-links a i {
-    display: none;
+.navigation-links a:last-child {
+  display: none;
 }
 
 .navigation-links a.filter {
