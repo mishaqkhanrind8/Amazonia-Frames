@@ -1010,7 +1010,7 @@ div.flex-item-1 {
     margin-bottom: 0;
  }
 
-.d-sm-none {
+.navigation-links a.d-sm-none {
   display: none;
 }
 
