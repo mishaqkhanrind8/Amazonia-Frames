@@ -1009,4 +1009,9 @@ div.flex-item-1 {
     margin-right: -1rem;
     margin-bottom: 0;
  }
+
+. d-sm-none {
+  display: none;
+}
+
 }
