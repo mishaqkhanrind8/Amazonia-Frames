@@ -984,7 +984,7 @@ div.flex-item-1 {
 
 .navigation-links a {
   font-size: 13px;
-  padding: 5px 8px;
+  padding: 5px 7px;
 }
 
 .navigation-links a:last-child {
@@ -992,7 +992,7 @@ div.flex-item-1 {
 }
 
 .navigation-links a i {
-    font-size: 14px;
+    font-size: 13px;
     padding: 0 3px 0 0;
 }
 
