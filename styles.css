@@ -347,6 +347,7 @@ div.flex-item-1 {
     border: 1px solid #3333331a;
     opacity: 0.6;
     background-color: #fff;
+    border-radius: 10px;
 }
 
 div.flex-item-1:hover {
